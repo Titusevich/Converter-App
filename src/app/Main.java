@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Converter App.");
-
+        System.out.println("Version 1.0.");
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter amount of weight in kilograms: ");
         double kgs = scan.nextDouble();
@@ -17,14 +17,14 @@ public class Main {
         double pounds = convertKgsToPounds(kgs);
         double kilos = convertPoundsToKgs(pnds);
         System.out.printf("%nResult is %.2f pounds and %.2f kilograms.",
-                pounds,kilos);
+                pounds, kilos);
     }
 
     private static double convertKgsToPounds(double kgs) {
         return kgs * CONVERT_KG;
     }
 
-    private static double convertPoundsToKgs(double pnds){
+    private static double convertPoundsToKgs(double pnds) {
         return pnds / CONVERT_KG;
     }
 }
