@@ -7,7 +7,7 @@ public class Main {
     private static final double CONVERT_KG = 2.20462;
 
     public static void main(String[] args) {
-        System.out.println("Converter App.");
+        System.out.println("App for measures converting.");
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter amount of weight in kilograms: ");
